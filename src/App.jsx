@@ -19,6 +19,9 @@ const App = () => {
           className={`h-[100vh] w-[100vw] ${
             dark ? "bg-black/60" : "bg-black/30"
           } absolute z-10 flex justify-center items-start`}
+          onClick={() => {
+            setFixed((prevValue) => !prevValue);
+          }}
         >
           <SearchBar dark={dark} />
         </div>
